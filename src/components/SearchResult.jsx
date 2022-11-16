@@ -123,9 +123,12 @@ const SearchResult = () => {
 
       {/*Location Card Item */}
       {locationCard && (
-        <div className="flex gap-4">
+        <div className="flex md:justify-center lg:justify-start gap-1 md:gap-4 flex-wrap lg:flex-nowrap">
           {locationData.map((card) => (
-            <div key={card.id} className="w-3/12 cursor-pointer">
+            <div
+              key={card.id}
+              className="w-full md:w-[48%] lg:w-3/12 cursor-pointer"
+            >
               <img
                 src={card.image}
                 alt={card.title}
