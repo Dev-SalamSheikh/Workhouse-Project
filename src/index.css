@@ -1,0 +1,27 @@
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  content: "next";
+  font-size: 24px !important;
+  background-color: #878485;
+  padding: 10px 15px;
+  border-radius: 100%;
+  color: #afb5b8;
+  font-weight: bold;
+  box-shadow: 1px 0px 3px 5px rgba(0, 0, 0, 0.03);
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: "prev";
+  font-size: 24px !important;
+  background-color: #878485;
+  padding: 10px 15px;
+  border-radius: 100%;
+  color: #afb5b8;
+  font-weight: bold;
+  box-shadow: 1px 0px 3px 5px rgba(0, 0, 0, 0.03);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
