@@ -44,10 +44,10 @@ const Footer = () => {
 
   return (
     <>
-      <div className="border border-t-slate-300 bg-Banner px-20 pt-3 pb-8">
-        <div className="footer_links flex justify-between">
+      <div className="border border-t-slate-300 bg-Banner px-8 lg:px-20 pt-3 pb-8">
+        <div className="footer_links flex justify-between gap-6 md:gap-0 flex-wrap lg:flex-nowrap">
           {/* Categories */}
-          <div>
+          <div className="w-full md:w-6/12 lg:w-full">
             <h1 className="text-xl font-semibold mb-2">Categories</h1>
             <div>
               {categoriesLinks.map((link) => (
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
           </div>
           {/* About */}
-          <div>
+          <div className="w-full md:w-6/12 lg:w-full">
             <h1 className="text-xl font-semibold mb-2">About</h1>
             <div>
               {aboutLinks.map((link) => (
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
           {/* Support */}
-          <div>
+          <div className="w-full md:w-6/12 lg:w-full">
             <h1 className="text-xl font-semibold mb-2">Support</h1>
             <div>
               {supportLinks.map((link) => (
@@ -89,7 +89,7 @@ const Footer = () => {
             </div>
           </div>
           {/* Community */}
-          <div>
+          <div className="w-full md:w-6/12 lg:w-full">
             <h1 className="text-xl font-semibold mb-2">Community</h1>
             <div>
               {communityLinks.map((link) => (

@@ -6,9 +6,9 @@ const FreelancerCard = ({ img, title }) => {
       <img
         src={img}
         alt={title}
-        className="w-28 rounded-full h-28 object-cover"
+        className="w-20 h-20 lg:w-28 rounded-full lg:h-28 object-cover"
       />
-      <h1 className="text-lg font-semibold">{title}</h1>
+      <h1 className="text-base lg:text-lg font-semibold">{title}</h1>
     </div>
   );
 };

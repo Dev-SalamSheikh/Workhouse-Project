@@ -79,7 +79,7 @@ const SearchResult = () => {
       {/* Heading */}
       <div className="flex gap-6 justify-center mb-8">
         <span
-          className={`text-xl font-bold cursor-pointer ${
+          className={`text-base lg:text-xl font-bold cursor-pointer ${
             sectorCard
               ? "border-b border-borderColor pb-3 text-borderColor"
               : ""
@@ -89,7 +89,7 @@ const SearchResult = () => {
           Search by sector
         </span>
         <span
-          className={`text-xl font-semibold cursor-pointer ${
+          className={`text-base lg:text-xl font-semibold cursor-pointer ${
             locationCard
               ? "border-b border-borderColor pb-3 text-borderColor"
               : ""
@@ -102,15 +102,20 @@ const SearchResult = () => {
 
       {/*Sector Card Item */}
       {sectorCard && (
-        <div className="flex gap-4">
+        <div className="flex md:justify-center lg:justify-start gap-1 md:gap-4 flex-wrap lg:flex-nowrap">
           {sectorData.map((card) => (
-            <div key={card.id} className="w-3/12 cursor-pointer">
+            <div
+              key={card.id}
+              className="w-full md:w-[48%] lg:w-3/12 cursor-pointer"
+            >
               <img
                 src={card.image}
                 alt={card.title}
                 className="h-48 w-full rounded-xl"
               />
-              <h2 className="text-lg font-semibold pl-6 my-3">{card.title}</h2>
+              <h2 className="text-lg font-semibold lg:pl-6 my-3 text-center lg:text-start">
+                {card.title}
+              </h2>
             </div>
           ))}
         </div>

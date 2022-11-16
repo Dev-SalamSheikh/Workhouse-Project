@@ -10,8 +10,10 @@ const TopCourses = () => {
     <div>
       {/* Top Course Heading */}
       <div>
-        <h1 className="text-3xl font-semibold">A wide selection of courses</h1>
-        <h3 className="text-lg font-semibold">
+        <h1 className="text-2xl lg:text-3xl font-semibold">
+          A wide selection of courses
+        </h1>
+        <h3 className="text-sm lg:text-lg font-semibold">
           Chose from tons of online video courses wiht new addtions
         </h3>
       </div>
@@ -28,6 +30,24 @@ const TopCourses = () => {
             navigation={true}
             modules={[Navigation]}
             className="mySwiper"
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+            }}
           >
             <div className="swiper_content">
               {CourseData.map((item) => (
@@ -48,7 +68,7 @@ const TopCourses = () => {
 
         {/* Buttons */}
         <div className="flex justify-center my-8">
-          <button className="border border-black px-2 rounded-full text-lg font-semibold">
+          <button className="border border-black px-2 rounded-full text-base lg:text-lg font-semibold">
             View More Course
           </button>
         </div>

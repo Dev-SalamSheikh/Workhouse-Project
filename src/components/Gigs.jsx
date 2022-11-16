@@ -69,19 +69,19 @@ const Gigs = () => {
   ];
 
   return (
-    <div className="px-20 bg-Banner py-8">
+    <div className="px-8 lg:px-20 bg-Banner pt-8 pb-8 lg:pb-16">
       {/* Heading */}
       <div>
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-xl lg:text-2xl font-semibold">
           Do you prefer ready-made gigs?
         </h1>
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-xl lg:text-2xl font-semibold">
           Have a look at these projects
         </h1>
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-4 gap-8 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4 mt-4">
         {gigsData.map((gig) => (
           <GigCards
             key={gig.id}

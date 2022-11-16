@@ -5,8 +5,8 @@ import TopEmployers from "./TopEmployers";
 
 const Search = () => {
   return (
-    <div className="py-16 bg-EmployersBg">
-      <div className="mx-auto container w-8/12 flex justify-center items-center flex-col">
+    <div className="lg:py-16 py-8 bg-EmployersBg">
+      <div className="mx-auto container px-8 lg:px-0 lg:w-8/12 flex justify-center items-center flex-col">
         {/* SearchBar */}
         <SearchBar />
 

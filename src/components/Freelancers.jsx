@@ -76,13 +76,13 @@ const Freelancers = () => {
     },
   ];
   return (
-    <div className="px-20 bg-Banner">
+    <div className="lg:px-20 px-8 bg-Banner">
       {/* Heading */}
       <div>
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-xl lg:text-2xl font-semibold">
           Do you need to hire freelancers?
         </h1>
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-xl lg:text-2xl font-semibold">
           Browser out top 20 talents by category
         </h1>
       </div>
@@ -92,10 +92,28 @@ const Freelancers = () => {
         <Swiper
           slidesPerView={6}
           spaceBetween={30}
-          slidesPerGroup={6}
+          slidesPerGroup={1}
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+          }}
         >
           {freelancers.map((freelancer) => (
             <SwiperSlide key={freelancer.id}>

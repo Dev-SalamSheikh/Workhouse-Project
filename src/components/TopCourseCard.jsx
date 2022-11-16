@@ -12,7 +12,7 @@ const TopCourseCard = ({
     <div className="w-full bg-white cursor-pointer rounded-md overflow-hidden shadow-md">
       <img src={img} alt={title} className="w-full h-48" />
       {/* content*/}
-      <div className="py-2 px-4 w-full">
+      <div className="lg:py-2 py-4 px-2 lg:px-4 w-full">
         <p className="text-xl font-semibold">{title}</p>
         <h6 className="pt-1 text-base font-medium">{authorFristName}</h6>
         <h6 className="pb-1 text-base font-medium">{authorLastName}</h6>

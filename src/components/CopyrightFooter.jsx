@@ -2,7 +2,7 @@ import React from "react";
 
 const CopyrightFooter = () => {
   return (
-    <div className="border border-t-slate-300 bg-Banner px-20 py-4 flex justify-between items-center">
+    <div className="border border-t-slate-300 bg-Banner px-8 lg:px-20 py-4 flex md:justify-between items-center flex-wrap md:flex-nowrap justify-center gap-4 md:gap-0">
       {/* Copyright Text */}
       <div>
         <span className="font-semibold">@2015 - 2022 Workhouse.</span>
@@ -12,7 +12,7 @@ const CopyrightFooter = () => {
         <div className="flex items-center">
           <span className="font-semibold">Follow us</span>
         </div>
-        <div className="text-2xl flex items-center gap-3">
+        <div className="text-xl lg:text-2xl flex items-center gap-3">
           <a href="*">
             {" "}
             <i

@@ -160,166 +160,180 @@ const Navbar = () => {
         {/* Content */}
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="logo w-3/12">
+          <div className="logo w-6/12 md:w-3/12">
             <img src={Logo} alt="Site_logo" className="w-60" />
           </div>
 
           {/* SearchBar & Dropdowns*/}
-          <div className="searchBox flex items-center w-6/12">
-            <div className="flex items-center justify-between w-full gap-14">
-              {/* World Icon */}
-              <div className="w-max">
-                <img src={World} alt="world_icon" className="w-24" />
-              </div>
-
-              {/* Input Field */}
-              <div className="w-full flex items-center gap-4 border-2 p-2 rounded-md">
-                <i className="fa-solid fa-magnifying-glass"></i>
-                <input
-                  type="text"
-                  className="w-full outline-none bg-transparent"
-                  placeholder="Search..."
-                />
-              </div>
-
-              {/* DropDown Menus */}
-              <div className="flex items-center gap-12 w-full">
-                {/* Dropdown Link Containers */}
-                <div className="relatives">
-                  <span
-                    className="text-xl font-bold cursor-pointer"
-                    style={{ color: "#274E85" }}
-                    onClick={toggleJob}
-                  >
-                    J
-                  </span>
-                  {/* Show Job State Toggle */}
-                  {showJob && (
-                    <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
-                      <div className="bg-borderColor p-2 text-center">
-                        <h1 className="text-lg text-white font-semibold">
-                          Jobs
-                        </h1>
-                      </div>
-                      <div className="bg-white text-center">
-                        {jobDropdown.map((item, i) => (
-                          <div className="border-t p-2 cursor-pointer">
-                            <span key={i} className="">
-                              {item.name}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+          <div className="w-6/12 hidden lg:block">
+            <div className="searchBox flex items-center w-full">
+              <div className="flex items-center justify-between w-full gap-14">
+                {/* World Icon */}
+                <div className="w-max">
+                  <img src={World} alt="world_icon" className="w-24" />
                 </div>
-                <div className="relative">
-                  <span
-                    className="text-xl font-bold cursor-pointer"
-                    style={{ color: "#A143B7" }}
-                    onClick={toggleFreelancing}
-                  >
-                    F
-                  </span>
 
-                  {/* Show Freelancing State Toggle */}
-                  {showFreelancing && (
-                    <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
-                      <div className="bg-borderColor p-2 text-center">
-                        <h1 className="text-lg font-semibold text-white">
-                          Freelancing
-                        </h1>
-                      </div>
-                      <div className="bg-white text-center">
-                        {FreelancingDropdown.map((item, i) => (
-                          <div className="border-t p-2 cursor-pointer" key={i}>
-                            <span className="">{item.name}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                {/* Input Field */}
+                <div className="w-full flex items-center gap-4 border-2 p-2 rounded-md">
+                  <i className="fa-solid fa-magnifying-glass"></i>
+                  <input
+                    type="text"
+                    className="w-full outline-none bg-transparent"
+                    placeholder="Search..."
+                  />
                 </div>
-                <div className="relative">
-                  <span
-                    className="text-xl font-bold cursor-pointer"
-                    style={{ color: "#599A6C" }}
-                    onClick={toggleGig}
-                  >
-                    G
-                  </span>
 
-                  {/* Show Gig State Toggle */}
-                  {showGig && (
-                    <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
-                      <div className="bg-borderColor p-2 text-center">
-                        <h1 className="text-lg font-semibold text-white">
-                          Gig
-                        </h1>
+                {/* DropDown Menus */}
+                <div className="flex items-center gap-12 w-full">
+                  {/* Dropdown Link Containers */}
+                  <div className="relatives">
+                    <span
+                      className="text-xl font-bold cursor-pointer"
+                      style={{ color: "#274E85" }}
+                      onClick={toggleJob}
+                    >
+                      J
+                    </span>
+                    {/* Show Job State Toggle */}
+                    {showJob && (
+                      <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
+                        <div className="bg-borderColor p-2 text-center">
+                          <h1 className="text-lg text-white font-semibold">
+                            Jobs
+                          </h1>
+                        </div>
+                        <div className="bg-white text-center">
+                          {jobDropdown.map((item, i) => (
+                            <div className="border-t p-2 cursor-pointer">
+                              <span key={i} className="">
+                                {item.name}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                      <div className="bg-white text-center">
-                        {GigDropdown.map((item, i) => (
-                          <div className="border-t p-2 cursor-pointer" key={i}>
-                            <span className="">{item.name}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-                <div className="relative">
-                  <span
-                    className="text-xl font-bold cursor-pointer"
-                    style={{ color: "#E55F5F" }}
-                    onClick={toggleEdu}
-                  >
-                    E
-                  </span>
+                    )}
+                  </div>
+                  <div className="relative">
+                    <span
+                      className="text-xl font-bold cursor-pointer"
+                      style={{ color: "#A143B7" }}
+                      onClick={toggleFreelancing}
+                    >
+                      F
+                    </span>
 
-                  {/* Show Gig State Toggle */}
-                  {showEducation && (
-                    <div className="absolute bg-white w-28 rounded-md overflow-hidden">
-                      <div className="bg-borderColor p-2 text-center">
-                        <h1 className="text-lg font-semibold text-white">
-                          Education
-                        </h1>
+                    {/* Show Freelancing State Toggle */}
+                    {showFreelancing && (
+                      <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
+                        <div className="bg-borderColor p-2 text-center">
+                          <h1 className="text-lg font-semibold text-white">
+                            Freelancing
+                          </h1>
+                        </div>
+                        <div className="bg-white text-center">
+                          {FreelancingDropdown.map((item, i) => (
+                            <div
+                              className="border-t p-2 cursor-pointer"
+                              key={i}
+                            >
+                              <span className="">{item.name}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                      <div className="bg-white text-center">
-                        {EduDropdown.map((item, i) => (
-                          <div className="border-t p-2 cursor-pointer" key={i}>
-                            <span className="">{item.name}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-                <div className="relative">
-                  <span
-                    className="text-xl font-bold cursor-pointer"
-                    style={{ color: "#F60319" }}
-                    onClick={toggleLocal}
-                  >
-                    L
-                  </span>
+                    )}
+                  </div>
+                  <div className="relative">
+                    <span
+                      className="text-xl font-bold cursor-pointer"
+                      style={{ color: "#599A6C" }}
+                      onClick={toggleGig}
+                    >
+                      G
+                    </span>
 
-                  {/* Show Local State Toggle */}
-                  {showLocal && (
-                    <div className="absolute bg-white w-32 rounded-md overflow-hidden">
-                      <div className="bg-borderColor p-2 text-center">
-                        <h1 className="text-lg font-semibold text-white">
-                          Local Service
-                        </h1>
+                    {/* Show Gig State Toggle */}
+                    {showGig && (
+                      <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
+                        <div className="bg-borderColor p-2 text-center">
+                          <h1 className="text-lg font-semibold text-white">
+                            Gig
+                          </h1>
+                        </div>
+                        <div className="bg-white text-center">
+                          {GigDropdown.map((item, i) => (
+                            <div
+                              className="border-t p-2 cursor-pointer"
+                              key={i}
+                            >
+                              <span className="">{item.name}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                      <div className="bg-white text-center">
-                        {LoocalDropdown.map((item, i) => (
-                          <div className="border-t p-2 cursor-pointer" key={i}>
-                            <span className="">{item.name}</span>
-                          </div>
-                        ))}
+                    )}
+                  </div>
+                  <div className="relative">
+                    <span
+                      className="text-xl font-bold cursor-pointer"
+                      style={{ color: "#E55F5F" }}
+                      onClick={toggleEdu}
+                    >
+                      E
+                    </span>
+
+                    {/* Show Gig State Toggle */}
+                    {showEducation && (
+                      <div className="absolute bg-white w-28 rounded-md overflow-hidden">
+                        <div className="bg-borderColor p-2 text-center">
+                          <h1 className="text-lg font-semibold text-white">
+                            Education
+                          </h1>
+                        </div>
+                        <div className="bg-white text-center">
+                          {EduDropdown.map((item, i) => (
+                            <div
+                              className="border-t p-2 cursor-pointer"
+                              key={i}
+                            >
+                              <span className="">{item.name}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
+                  <div className="relative">
+                    <span
+                      className="text-xl font-bold cursor-pointer"
+                      style={{ color: "#F60319" }}
+                      onClick={toggleLocal}
+                    >
+                      L
+                    </span>
+
+                    {/* Show Local State Toggle */}
+                    {showLocal && (
+                      <div className="absolute bg-white w-32 rounded-md overflow-hidden">
+                        <div className="bg-borderColor p-2 text-center">
+                          <h1 className="text-lg font-semibold text-white">
+                            Local Service
+                          </h1>
+                        </div>
+                        <div className="bg-white text-center">
+                          {LoocalDropdown.map((item, i) => (
+                            <div
+                              className="border-t p-2 cursor-pointer"
+                              key={i}
+                            >
+                              <span className="">{item.name}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
