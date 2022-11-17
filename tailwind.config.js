@@ -6,9 +6,12 @@ module.exports = {
       backgroundColor: {
         Banner: "#F0F0F0",
         SearchBar: "#41A9F4",
+        AverageSalary: "#8BC8DB",
         SearchBtnBg: "#EDEDED",
         EmployersBg: "#E3E3E3",
+        ExpectedSalary: "#DEDEDE",
         FreelancerBg: "#AFB5B8",
+        careerBtn: "#B4B5C3",
       },
       colors: {
         ThemeBlue: "#5DB5F3",

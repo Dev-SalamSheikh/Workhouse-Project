@@ -1,22 +1,21 @@
-import Banner from "./components/Banner";
-import Courses from "./components/Courses";
-import Footer from "./components/Footer";
-import Freelancers from "./components/Freelancers";
-import Gigs from "./components/Gigs";
-import Navbar from "./components/Navbar";
-import Search from "./components/Search";
+import Homepage from "./Pages/Homepage";
+import ForumPage from "./Pages/ForumPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SalaryPage from "./Pages/SalaryPage";
+import CareerPage from "./Pages/CareerPage";
+import PostGig from "./Pages/PostGig";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Banner />
-      <Search />
-      <Courses />
-      <Freelancers />
-      <Gigs />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/forum" element={<ForumPage />} />
+        <Route path="/salary" element={<SalaryPage />} />
+        <Route path="/career" element={<CareerPage />} />
+        <Route path="/postgig" element={<PostGig />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

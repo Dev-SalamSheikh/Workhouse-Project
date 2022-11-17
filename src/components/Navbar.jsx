@@ -3,6 +3,7 @@ import World from "../images/world.png";
 import Logo from "../images/logo-Edited.png";
 import Avatar from "../images/avatar.webp";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   // States
@@ -141,16 +142,20 @@ const Navbar = () => {
   // Dropdown Profile
   const ProfilelDropdown = [
     {
-      name: "Blog",
+      name: "Create Gig",
+      link: "/postgig",
     },
     {
-      name: "Settings",
+      name: "Career Advice",
+      link: "/career",
     },
     {
       name: "Forum",
+      link: "/forum",
     },
     {
-      name: "Refer a Friend",
+      name: "Average Salary",
+      link: "/salary",
     },
   ];
 
@@ -161,7 +166,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="logo w-6/12 md:w-3/12">
-            <img src={Logo} alt="Site_logo" className="w-60" />
+            <NavLink to="/">
+              <img src={Logo} alt="Site_logo" className="w-60" />
+            </NavLink>
           </div>
 
           {/* SearchBar & Dropdowns*/}
@@ -196,7 +203,7 @@ const Navbar = () => {
                     </span>
                     {/* Show Job State Toggle */}
                     {showJob && (
-                      <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
+                      <div className="absolute bg-white w-28 rounded-md  overflow-hidden shadow-md">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg text-white font-semibold">
                             Jobs
@@ -225,7 +232,7 @@ const Navbar = () => {
 
                     {/* Show Freelancing State Toggle */}
                     {showFreelancing && (
-                      <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
+                      <div className="absolute bg-white w-28 rounded-md  overflow-hidden shadow-md">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg font-semibold text-white">
                             Freelancing
@@ -255,7 +262,7 @@ const Navbar = () => {
 
                     {/* Show Gig State Toggle */}
                     {showGig && (
-                      <div className="absolute bg-white w-28 rounded-md overflow-hidden shadow-md">
+                      <div className="absolute bg-white w-28 rounded-md  overflow-hidden shadow-md">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg font-semibold text-white">
                             Gig
@@ -285,7 +292,7 @@ const Navbar = () => {
 
                     {/* Show Gig State Toggle */}
                     {showEducation && (
-                      <div className="absolute bg-white w-28 rounded-md overflow-hidden">
+                      <div className="absolute bg-white w-28 rounded-md  overflow-hidden">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg font-semibold text-white">
                             Education
@@ -315,7 +322,7 @@ const Navbar = () => {
 
                     {/* Show Local State Toggle */}
                     {showLocal && (
-                      <div className="absolute bg-white w-32 rounded-md overflow-hidden">
+                      <div className="absolute bg-white w-32 rounded-md  overflow-hidden">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg font-semibold text-white">
                             Local Service
@@ -353,15 +360,17 @@ const Navbar = () => {
 
             {/* Show Freelancing State Toggle */}
             {showProfile && (
-              <div className="absolute top-[110%] bg-white w-28 rounded-md overflow-hidden">
+              <div className="absolute top-[110%] bg-white w-36 shadow-md rounded-md overflow-hidden">
                 <div className="bg-borderColor p-2 text-center">
                   <h1 className="text-lg font-semibold text-white">Profile</h1>
                 </div>
                 <div className="bg-white text-center">
                   {ProfilelDropdown.map((item, i) => (
-                    <div className="border-t p-2 cursor-pointer" key={i}>
-                      <span className="">{item.name}</span>
-                    </div>
+                    <NavLink to={item.link} key={i}>
+                      <div className="border-t p-2 cursor-pointer">
+                        <span className="">{item.name}</span>
+                      </div>
+                    </NavLink>
                   ))}
                 </div>
               </div>
