@@ -161,6 +161,10 @@ const Navbar = () => {
       name: "Event",
       link: "/event",
     },
+    {
+      name: "Build CV",
+      link: "/buildcv",
+    },
   ];
 
   return (

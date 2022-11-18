@@ -129,7 +129,7 @@ const EventCalendar = () => {
                 <div
                   onClick={(e) => ColorItem(e)}
                   key={item.id}
-                  className={`w-[20%] h-[70px] lg:h-[100px] border-black border-l-0 border cursor-pointer flex justify-center items-center text-2xl lg:text-3xl font-bold`}
+                  className={`w-[20%] h-[70px] lg:h-[100px] border-black border-l-0 border-t-0 border cursor-pointer flex justify-center items-center text-2xl lg:text-3xl font-bold`}
                 >
                   {item.text}
                 </div>

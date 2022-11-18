@@ -5,6 +5,7 @@ import SalaryPage from "./Pages/SalaryPage";
 import CareerPage from "./Pages/CareerPage";
 import PostGig from "./Pages/PostGig";
 import EventPage from "./Pages/EventPage";
+import BuildCV from "./Pages/BuildCV";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/career" element={<CareerPage />} />
         <Route path="/postgig" element={<PostGig />} />
         <Route path="/event" element={<EventPage />} />
+        <Route path="/buildcv" element={<BuildCV />} />
       </Routes>
     </BrowserRouter>
   );
