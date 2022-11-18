@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SalaryPage from "./Pages/SalaryPage";
 import CareerPage from "./Pages/CareerPage";
 import PostGig from "./Pages/PostGig";
+import EventPage from "./Pages/EventPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/salary" element={<SalaryPage />} />
         <Route path="/career" element={<CareerPage />} />
         <Route path="/postgig" element={<PostGig />} />
+        <Route path="/event" element={<EventPage />} />
       </Routes>
     </BrowserRouter>
   );

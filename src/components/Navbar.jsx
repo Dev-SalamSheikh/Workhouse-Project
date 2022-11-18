@@ -157,6 +157,10 @@ const Navbar = () => {
       name: "Average Salary",
       link: "/salary",
     },
+    {
+      name: "Event",
+      link: "/event",
+    },
   ];
 
   return (
