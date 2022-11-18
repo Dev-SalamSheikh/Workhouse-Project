@@ -12,10 +12,12 @@ module.exports = {
         ExpectedSalary: "#DEDEDE",
         FreelancerBg: "#AFB5B8",
         careerBtn: "#B4B5C3",
+        bgGigBox: "#7CD175",
       },
       colors: {
         ThemeBlue: "#5DB5F3",
         borderColor: "#41A9F4",
+        gigBorder: "#7CD175",
       },
     },
   },

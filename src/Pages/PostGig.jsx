@@ -1,11 +1,12 @@
 import Footer from "../components/Footer";
+import GigForm from "../components/GigForm";
 import Navbar from "../components/Navbar";
 
 const PostGig = () => {
   return (
     <div>
       <Navbar />
-      <h1>Post a Gig</h1>
+      <GigForm />
       <Footer />
     </div>
   );
