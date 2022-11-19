@@ -165,6 +165,10 @@ const Navbar = () => {
       name: "Build CV",
       link: "/buildcv",
     },
+    {
+      name: "Create an account",
+      link: "/register",
+    },
   ];
 
   return (
