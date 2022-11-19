@@ -128,7 +128,7 @@ const RegisterForm = () => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full text-lg"
+                  className="bg-transparent w-full text-lg border-none outline-none"
                   value={registerData.language}
                   onChange={(e) =>
                     setRegisterData({
@@ -150,7 +150,7 @@ const RegisterForm = () => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full text-lg"
+                  className="bg-transparent w-full text-lg border-none outline-none"
                   value={registerData.interested}
                   onChange={(e) =>
                     setRegisterData({
