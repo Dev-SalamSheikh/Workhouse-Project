@@ -171,7 +171,7 @@ const RegisterForm = () => {
             </div>
 
             {/* Button */}
-            <div className="mt-8 text-end">
+            <div className="mt-8">
               {registerData.interested === "freelance" ? (
                 <NavLink to="/buildcv">
                   <button
@@ -203,6 +203,16 @@ const RegisterForm = () => {
                   </button>
                 </NavLink>
               )}
+            </div>
+
+            {/* Already have an accoutn */}
+            <div className="mt-4">
+              <p className="text-sm md:text-base font-semibold">
+                Already have an account?{" "}
+                <span className="text-borderColor">
+                  <NavLink to="/login">Login here</NavLink>
+                </span>
+              </p>
             </div>
           </form>
         </div>
