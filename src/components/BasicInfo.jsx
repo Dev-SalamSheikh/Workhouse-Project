@@ -95,7 +95,7 @@ const BasicInfo = ({ setPage, page, formData, setFormData }) => {
         style={{ backgroundColor: "#999999" }}
       >
         <select
-          className="bg-transparent w-full text-lg"
+          className="bg-transparent w-full text-lg border-none outline-none"
           value={formData.country}
           onChange={(e) =>
             setFormData({
@@ -119,7 +119,7 @@ const BasicInfo = ({ setPage, page, formData, setFormData }) => {
         style={{ backgroundColor: "#999999" }}
       >
         <select
-          className="bg-transparent w-full text-lg"
+          className="bg-transparent w-full text-lg border-none outline-none"
           value={formData.business}
           onChange={(e) =>
             setFormData({

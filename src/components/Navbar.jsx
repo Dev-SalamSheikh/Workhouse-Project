@@ -372,7 +372,7 @@ const Navbar = () => {
 
             {/* Show Freelancing State Toggle */}
             {showProfile && (
-              <div className="absolute top-[110%] bg-white w-36 shadow-md rounded-md overflow-hidden">
+              <div className="absolute top-[110%] bg-white w-36 shadow-md rounded-md overflow-hidden z-[10000]">
                 <div className="bg-borderColor p-2 text-center">
                   <h1 className="text-lg font-semibold text-white">Profile</h1>
                 </div>
