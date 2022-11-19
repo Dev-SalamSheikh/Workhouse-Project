@@ -105,11 +105,11 @@ const BasicInfo = ({ setPage, page, formData, setFormData }) => {
           }
         >
           <option>Country</option>
-          <option value="Country">Nigeria</option>
-          <option value="Country">USA</option>
-          <option value="Country">Canada</option>
-          <option value="Country">India</option>
-          <option value="Country">Bangladesh</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="india">India</option>
+          <option value="bangladesh">Bangladesh</option>
         </select>
       </div>
 
@@ -129,11 +129,11 @@ const BasicInfo = ({ setPage, page, formData, setFormData }) => {
           }
         >
           <option>Business</option>
-          <option value="Country">Business 2</option>
-          <option value="Country">Business 3</option>
-          <option value="Country">Business 4</option>
-          <option value="Country">Business 5</option>
-          <option value="Country">Business 6</option>
+          <option value="business">Business 2</option>
+          <option value="business">Business 3</option>
+          <option value="business">Business 4</option>
+          <option value="business">Business 5</option>
+          <option value="business">Business 6</option>
         </select>
       </div>
 

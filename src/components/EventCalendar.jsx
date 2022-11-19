@@ -50,13 +50,13 @@ const EventCalendar = () => {
         <div className="flex justify-between items-center gap-4 lg:gap-0 flex-wrap lg:flex-nowrap">
           {/* Filter By */}
           <div className="w-full lg:w-2/12">
-            <h2 className="text-xl text-center lg:text-start lg:text-3xl font-semibold">
+            <h2 className="text-xl lg:text-start lg:text-3xl font-semibold">
               Filter By <i className="fa-solid fa-arrow-up-wide-short"></i>
             </h2>
           </div>
           {/* SearchBox */}
           <div className="w-full">
-            <div className="bg-white flex gap-4 md:gap-8 items-center p-2 md:p-4 rounded-lg w-full md:w-8/12 mx-auto border-slate-400 border">
+            <div className="bg-white flex gap-4 md:gap-8 items-center p-2 md:p-4 rounded-lg w-full md:w-8/12 lg:mx-auto border-slate-400 border">
               <i className="fa-solid fa-magnifying-glass"></i>
               <input
                 type="text"
@@ -73,7 +73,7 @@ const EventCalendar = () => {
             </div>
           </div>
           {/* Current month */}
-          <div className="w-full lg:w-2/12 flex flex-col items-center lg:items-end">
+          <div className="w-full lg:w-2/12 flex flex-col lg:items-end">
             <p className="text-base lg:text-lg font-semibold">
               Filter by month/Year
             </p>

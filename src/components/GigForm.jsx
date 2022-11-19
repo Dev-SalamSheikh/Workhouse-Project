@@ -423,6 +423,16 @@ const GigForm = () => {
                 </div>
               </div>
             </div>
+
+            {/* Buttons */}
+            <div className="mt-4 md:mt-12 text-end">
+              <button
+                className="border py-2 px-4 font-semibold rounded-md"
+                style={{ backgroundColor: "#7CD175" }}
+              >
+                Post Gig
+              </button>
+            </div>
           </form>
         </div>
       </div>
