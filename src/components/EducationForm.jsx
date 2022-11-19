@@ -70,7 +70,7 @@ const EducationForm = ({ formData, setFormData }) => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full"
+                  className="bg-transparent w-full border-none outline-none"
                   value={formData.edustartmonth}
                   onChange={(e) =>
                     setFormData({
@@ -100,7 +100,7 @@ const EducationForm = ({ formData, setFormData }) => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full"
+                  className="bg-transparent w-full border-none outline-none"
                   value={formData.edustartyear}
                   onChange={(e) =>
                     setFormData({
@@ -149,7 +149,7 @@ const EducationForm = ({ formData, setFormData }) => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full"
+                  className="bg-transparent w-full border-none outline-none"
                   value={formData.eduendmonth}
                   onChange={(e) =>
                     setFormData({
@@ -179,7 +179,7 @@ const EducationForm = ({ formData, setFormData }) => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full"
+                  className="bg-transparent w-full border-none outline-none"
                   value={formData.eduendyear}
                   onChange={(e) =>
                     setFormData({

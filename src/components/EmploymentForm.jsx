@@ -70,7 +70,7 @@ const EmploymentForm = ({ formData, setFormData }) => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full"
+                  className="bg-transparent w-full border-none outline-none"
                   value={formData.startmonth}
                   onChange={(e) =>
                     setFormData({
@@ -100,7 +100,7 @@ const EmploymentForm = ({ formData, setFormData }) => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full"
+                  className="bg-transparent w-full border-none outline-none"
                   value={formData.startyear}
                   onChange={(e) =>
                     setFormData({
@@ -149,7 +149,7 @@ const EmploymentForm = ({ formData, setFormData }) => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full"
+                  className="bg-transparent w-full border-none outline-none"
                   value={formData.endmonth}
                   onChange={(e) =>
                     setFormData({
@@ -179,7 +179,7 @@ const EmploymentForm = ({ formData, setFormData }) => {
                 style={{ backgroundColor: "#999999" }}
               >
                 <select
-                  className="bg-transparent w-full"
+                  className="bg-transparent w-full border-none outline-none"
                   value={formData.endyear}
                   onChange={(e) =>
                     setFormData({
