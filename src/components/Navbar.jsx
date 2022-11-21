@@ -169,6 +169,14 @@ const Navbar = () => {
       name: "Create an account",
       link: "/register",
     },
+    {
+      name: "Job Search Page",
+      link: "/jobs",
+    },
+    {
+      name: "Become a freelancer",
+      link: "/freelancer",
+    },
   ];
 
   return (
@@ -372,7 +380,7 @@ const Navbar = () => {
 
             {/* Show Freelancing State Toggle */}
             {showProfile && (
-              <div className="absolute top-[110%] bg-white w-36 shadow-md rounded-md overflow-hidden z-[10000]">
+              <div className="absolute top-[110%] bg-white w-max shadow-md rounded-md overflow-hidden z-[10000]">
                 <div className="bg-borderColor p-2 text-center">
                   <h1 className="text-lg font-semibold text-white">Profile</h1>
                 </div>
