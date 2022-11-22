@@ -15,6 +15,7 @@ module.exports = {
         bgGigBox: "#7CD175",
         searchbarBg: "#A4E0F6",
         freelancerBg: "#F3E8F6",
+        coursesSearchBar: "#F28029",
       },
       colors: {
         ThemeBlue: "#5DB5F3",

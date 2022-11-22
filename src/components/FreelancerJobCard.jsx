@@ -15,18 +15,18 @@ const FreelancerJobCard = ({ img, title, location, author, price }) => {
 
   return (
     <div className="w-full p-2 md:py-6 md:px-4 rounded-xl border border-black mb-4 bg-freelancerBg">
-      <div className="flex justify-between flex-wrap gap-2 lg:gap-0 lg:flex-nowrap">
+      <div className="flex justify-between flex-wrap gap-2 md:gap-6 lg:gap-0 md:flex-nowrap">
         {/* Image */}
-        <div className="w-full lg:w-2/12">
+        <div className="w-full md:w-3/12 lg:w-2/12">
           <img
             src={img}
             alt=""
-            className="w-full lg:h-[130px] h-[200px] rounded-md"
+            className="w-full lg:h-[130px] h-[200px] md:h-[100%] rounded-md"
           />
         </div>
 
         {/* Content */}
-        <div className="w-full lg:w-9/12 flex gap-4 lg:gap-6 flex-col">
+        <div className="w-full md:w-9/12 flex gap-4 lg:gap-6 flex-col">
           {/* Heading Content */}
           <div className="w-full">
             <h1 className="text-base lg:text-xl font-semibold">{title}</h1>

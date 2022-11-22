@@ -88,7 +88,7 @@ const JobSearchCards = () => {
           )}
           {/* Right Side */}
           <div
-            className={`right px-4 lg:px-0 ${
+            className={`right px-4 lg:px-0 md:w-full ${
               toggleFilter === true ? "lg:w-10/12" : "lg:w-full"
             } flex gap-8`}
           >

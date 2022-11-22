@@ -10,6 +10,7 @@ import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import JobSearch from "./Pages/JobSearch";
 import Freelancer from "./Pages/Freelancer";
+import CourseShop from "./Pages/CourseShop";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/buildcv" element={<BuildCV />} />
         <Route path="/jobs" element={<JobSearch />} />
         <Route path="/freelancer" element={<Freelancer />} />
+        <Route path="/allcourse" element={<CourseShop />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

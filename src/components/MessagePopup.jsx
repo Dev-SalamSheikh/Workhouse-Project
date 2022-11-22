@@ -8,7 +8,7 @@ const MessagePopup = ({ messagePopup, setMessagePopup }) => {
       <div>
         {/* Message Header */}
         <div
-          className="w-full text-center py-2 h-[50px] relative"
+          className="w-full text-center py-2 h-[50px] relative flex justify-center items-center"
           style={{ backgroundColor: "#2196F3" }}
         >
           <h1 className="text-xl text-white font-semibold">Salam Sheikh</h1>

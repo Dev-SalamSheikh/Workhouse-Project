@@ -17,18 +17,18 @@ const JobSearchCard = ({ img, salary, city, position, category, brand }) => {
       className="w-full p-2 lg:py-6 lg:px-4 rounded-xl border border-black mb-4"
       style={{ backgroundColor: "#A4E0F6" }}
     >
-      <div className="flex justify-between flex-wrap lg:flex-nowrap">
+      <div className="flex justify-between flex-wrap md:flex-nowrap md:gap-6 lg:gap-0">
         {/* Image */}
-        <div className="w-full lg:w-2/12">
+        <div className="w-full md:w-3/12 lg:w-2/12">
           <img
             src={img}
             alt={`${brand}_img`}
-            className="w-full lg:h-[110px] rounded-md"
+            className="w-full md:h-full lg:h-[110px] rounded-md"
           />
         </div>
 
         {/* Content */}
-        <div className="w-full lg:w-9/12 flex flex-col justify-between">
+        <div className="w-full md:w-9/12 flex flex-col justify-between">
           {/* Upper Content */}
           <div className="flex justify-between lg:items-center flex-col lg:flex-row gap-2 lg:gap-0">
             {/* Brand Name */}
@@ -48,7 +48,7 @@ const JobSearchCard = ({ img, salary, city, position, category, brand }) => {
           </div>
 
           {/* Lower Content */}
-          <div className="flex justify-between mt-1 lg:mt-0 lg:items-center flex-col gap-2">
+          <div className="flex justify-between mt-1 lg:mt-0 lg:items-center flex-col lg:flex-row gap-2">
             {/* City */}
             <div className="lg:w-full">
               <p className="font-semibold">{city}</p>

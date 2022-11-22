@@ -4,6 +4,7 @@ import TopCourseCard from "./TopCourseCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { NavLink } from "react-router-dom";
 
 const TopCourses = () => {
   return (
@@ -68,9 +69,11 @@ const TopCourses = () => {
 
         {/* Buttons */}
         <div className="flex justify-center my-8">
-          <button className="border border-black px-2 rounded-full text-base lg:text-lg font-semibold">
-            View More Course
-          </button>
+          <NavLink to="/allcourse">
+            <button className="border border-black px-2 rounded-full text-base lg:text-lg font-semibold">
+              View More Course
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>

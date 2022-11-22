@@ -177,6 +177,10 @@ const Navbar = () => {
       name: "Become a freelancer",
       link: "/freelancer",
     },
+    {
+      name: "Courses",
+      link: "/allcourse",
+    },
   ];
 
   return (
