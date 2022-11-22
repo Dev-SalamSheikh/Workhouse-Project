@@ -10,7 +10,7 @@ const LocalServiceCard = ({ img, title, author }) => {
       <div className="flex gap-2 md:gap-10 flex-col md:flex-row">
         {/* Left */}
         <div>
-          <img src={img} alt="" className="rounded-xl brightness-90" />
+          <img src={img} alt="" className="rounded-xl brightness-90 w-full" />
         </div>
 
         {/* Right */}
