@@ -185,6 +185,10 @@ const Navbar = () => {
       name: "Local Services",
       link: "/localservices",
     },
+    {
+      name: "Podcast",
+      link: "/podcast",
+    },
   ];
 
   return (

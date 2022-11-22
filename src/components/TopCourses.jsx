@@ -46,7 +46,7 @@ const TopCourses = () => {
               },
               1024: {
                 slidesPerView: 4,
-                spaceBetween: 10,
+                spaceBetween: 40,
               },
             }}
           >

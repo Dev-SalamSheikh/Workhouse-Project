@@ -11,6 +11,7 @@ module.exports = {
         EmployersBg: "#E3E3E3",
         ExpectedSalary: "#DEDEDE",
         FreelancerBg: "#AFB5B8",
+        podcastSearch: "#B4B5C2",
         careerBtn: "#B4B5C3",
         bgGigBox: "#7CD175",
         searchbarBg: "#A4E0F6",

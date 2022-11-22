@@ -12,6 +12,10 @@ import JobSearch from "./Pages/JobSearch";
 import Freelancer from "./Pages/Freelancer";
 import CourseShop from "./Pages/CourseShop";
 import LocalServices from "./Pages/LocalServices";
+import Podcasts from "./Pages/Podcasts";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
 function App() {
   return (
@@ -28,6 +32,7 @@ function App() {
         <Route path="/freelancer" element={<Freelancer />} />
         <Route path="/allcourse" element={<CourseShop />} />
         <Route path="/localservices" element={<LocalServices />} />
+        <Route path="/podcast" element={<Podcasts />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

@@ -41,7 +41,7 @@ const LocalServicesContainer = () => {
   ];
 
   return (
-    <div className="bg-Banner pb-14 px-8 md:px-0">
+    <div className="bg-Banner pb-14 px-8 lg:px-0">
       <div className="container mx-auto">
         {/* Header */}
         <div className="flex flex-col gap-2 md:gap-0 md:flex-row">
