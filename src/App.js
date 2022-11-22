@@ -11,6 +11,7 @@ import Login from "./Pages/Login";
 import JobSearch from "./Pages/JobSearch";
 import Freelancer from "./Pages/Freelancer";
 import CourseShop from "./Pages/CourseShop";
+import LocalServices from "./Pages/LocalServices";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/jobs" element={<JobSearch />} />
         <Route path="/freelancer" element={<Freelancer />} />
         <Route path="/allcourse" element={<CourseShop />} />
+        <Route path="/localservices" element={<LocalServices />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

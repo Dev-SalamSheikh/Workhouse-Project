@@ -27,6 +27,11 @@
   background-color: #48bb78;
 }
 
+#toogleB:not(:checked) ~ .dot {
+  transform: translateX(100%);
+  background-color: #e31212;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -191,6 +191,7 @@ const GigForm = () => {
             {/* Package Select */}
             <div className="flex items-center justify-end mt-8 mb-2">
               <div className="mr-3 font-semibold">3 packages</div>
+              {/* Toggle Button */}
               <label
                 htmlFor="toogleA"
                 className="flex items-center cursor-pointer"

@@ -181,6 +181,10 @@ const Navbar = () => {
       name: "Courses",
       link: "/allcourse",
     },
+    {
+      name: "Local Services",
+      link: "/localservices",
+    },
   ];
 
   return (

@@ -49,11 +49,11 @@ const CourseSearch = () => {
               }
             >
               <option value="">Category</option>
-              <option value="">Web Development</option>
-              <option value="">Digital Marketing</option>
-              <option value="">SEO Optimization</option>
-              <option value="">Voice Artist</option>
-              <option value="">Content Writer</option>
+              <option value="web development">Web Development</option>
+              <option value="digital marketing">Digital Marketing</option>
+              <option value="seo">SEO Optimization</option>
+              <option value="voice">Voice Artist</option>
+              <option value="contentwriter">Content Writer</option>
             </select>
           </div>
         </div>

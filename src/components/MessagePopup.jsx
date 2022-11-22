@@ -1,7 +1,7 @@
 const MessagePopup = ({ messagePopup, setMessagePopup }) => {
   return (
     <div
-      className={`md:w-[300px] md:h-[400px] fixed bottom-0 ${
+      className={`z-[10000] md:w-[300px] md:h-[400px] fixed bottom-0 ${
         messagePopup ? "right-2 duration-500" : "right-[-100%] duration-500"
       } rounded-t-md overflow-hidden shadow-md`}
     >
