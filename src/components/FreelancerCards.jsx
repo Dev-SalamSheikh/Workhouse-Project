@@ -31,17 +31,17 @@ const FreelancerCards = () => {
   ];
   return (
     <div className="bg-Banner pb-10">
-      <div className="container mx-auto">
+      <div className="container mx-auto w-10/12">
         <div className="flex justify-between gap-4 flex-wrap lg:flex-nowrap">
           {/* Left Side */}
           <div className="left w-full lg:w-2/12">
             {/* Heading */}
-            <p className="text-xl lg:text-2xl font-semibold pl-4">
+            <p className="text-xl lg:text-2xl font-semibold md:pl-4">
               Filter <i className="fa-solid fa-arrow-up-wide-short"></i>
             </p>
 
             {/* Filtered Item */}
-            <div className="flex flex-col gap-2 mt-4 lg:mt-8 pl-4">
+            <div className="flex flex-col gap-2 mt-4 lg:mt-8 md:pl-4">
               <span className="text-base md:text-lg font-semibold cursor-pointer">
                 Payment Scheme <i className="fa-solid fa-sort-down ml-1"></i>
               </span>
@@ -57,7 +57,7 @@ const FreelancerCards = () => {
             </div>
 
             {/* Sort By */}
-            <div className="py-2 px-4 rounded-md mt-4 mx-4 lg:mt-8 bg-freelancerBg w-11/12">
+            <div className="py-2 px-4 rounded-md mt-4 lg:mt-8 bg-freelancerBg md:w-11/12 w-full">
               <select className="w-full bg-transparent outline-none border-none font-light cursor-pointer">
                 <option>Sort By</option>
                 <option value="price">Price</option>
@@ -69,7 +69,7 @@ const FreelancerCards = () => {
           </div>
 
           {/* Right Side */}
-          <div className={`right w-full lg:w-10/12 flex px-4 gap-8`}>
+          <div className={`right w-full lg:w-10/12 flex gap-8`}>
             {/* Card Container */}
             <div className="w-full">
               {data.map((item) => (
