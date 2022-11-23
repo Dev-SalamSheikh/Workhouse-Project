@@ -20,7 +20,7 @@ const BlogCards = () => {
     {
       id: 3,
       img: Blog1,
-      title: "How to find the most relaxing jobs on workhouse",
+      title: "How to find the most relaxing jobs on workhouse latest",
       author: "Talia Mar",
     },
   ];
