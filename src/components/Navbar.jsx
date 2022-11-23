@@ -189,6 +189,10 @@ const Navbar = () => {
       name: "Podcast",
       link: "/podcast",
     },
+    {
+      name: "Blogs",
+      link: "/blogs",
+    },
   ];
 
   return (

@@ -16,6 +16,7 @@ import Podcasts from "./Pages/Podcasts";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import Blogs from "./Pages/Blogs";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/allcourse" element={<CourseShop />} />
         <Route path="/localservices" element={<LocalServices />} />
         <Route path="/podcast" element={<Podcasts />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

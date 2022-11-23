@@ -6,7 +6,7 @@ const LocalServiceCard = ({ img, title, author }) => {
   const [openMessage, setOpenMessage] = useState(false);
 
   return (
-    <div className="mb-4 md:mb-0 rounded-md w-full border border-buttonRed px-4 py-4 md:pt-8 md:pb-5">
+    <div className="mb-4 md:mb-0 w-full border border-buttonRed px-4 py-4 md:pt-8 md:pb-5">
       <div className="flex gap-2 md:gap-10 flex-col md:flex-row">
         {/* Left */}
         <div>
