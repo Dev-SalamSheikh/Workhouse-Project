@@ -58,7 +58,7 @@ const PodcastContainer = () => {
   ];
   return (
     <div className="bg-Banner md:pb-20 md:pt-6 pb-10">
-      <div className="container mx-auto px-8 lg:px-0">
+      <div className="container w-10/12 mx-auto lg:px-0">
         <div>
           <PodcastCarousel title="Your Feed" data={feedData} />
         </div>

@@ -4,8 +4,8 @@ const BlogSearch = () => {
   const [inputData, setInputData] = useState("");
   return (
     <div>
-      <div className="bg-Banner md:pt-12 md:pb-2 md:my-0 md:mx-0 py-6 px-8">
-        <div className="container mx-auto bg-podcastSearch rounded-md md:px-10 md:pt-10 md:pb-4 p-4">
+      <div className="bg-Banner md:pt-12 md:pb-2 md:my-0 md:mx-0 py-6">
+        <div className="container w-10/12 mx-auto bg-podcastSearch rounded-md md:px-10 md:pt-10 md:pb-4 p-4">
           {/* Content */}
           <div>
             {/* Search Input */}

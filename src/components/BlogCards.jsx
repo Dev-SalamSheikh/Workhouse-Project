@@ -26,8 +26,8 @@ const BlogCards = () => {
   ];
 
   return (
-    <div className="bg-Banner pt-8 pb-16 px-8 lg:px-0">
-      <div className="container mx-auto">
+    <div className="bg-Banner pt-8 pb-16">
+      <div className="container w-10/12 mx-auto">
         {data.map((item) => (
           <BlogSingleCard
             key={item.id}

@@ -16,7 +16,7 @@ const LocalServiceSearch = () => {
 
       {/* SearchBar */}
       <div className="lg:mt-16 my-4">
-        <div className="w-full md:w-11/12 lg:w-10/12 mx-auto bg-localRed p-4 lg:pt-10 lg:pb-8 lg:px-16 rounded-lg">
+        <div className="w-full lg:w-10/12 mx-auto bg-localRed p-4 lg:pt-10 lg:pb-8 lg:px-16 rounded-lg">
           {/* SearchBar */}
           <div className="flex flex-wrap gap-2 lg:flex-nowrap justify-between items-center lg:gap-16">
             {/* Services */}

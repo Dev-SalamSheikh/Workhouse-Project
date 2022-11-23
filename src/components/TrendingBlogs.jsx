@@ -5,8 +5,8 @@ import Image3 from "../images/freelancer3.jpg";
 
 const TrendingBlogs = () => {
   return (
-    <div className="bg-Banner px-6 lg:px-0">
-      <div className="container mx-auto">
+    <div className="bg-Banner">
+      <div className="container w-10/12 mx-auto">
         {/* Heading */}
         <h1 className="text-2xl font-semibold">
           Trending on workhouse <i className="fa-solid fa-chart-line"></i>
