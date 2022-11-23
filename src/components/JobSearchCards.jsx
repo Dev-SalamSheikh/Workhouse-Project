@@ -39,7 +39,7 @@ const JobSearchCards = () => {
   ];
   return (
     <div className="bg-Banner pb-10">
-      <div className="container mx-auto">
+      <div className="container mx-auto w-10/12">
         <div className="flex justify-between gap-4 flex-wrap lg:flex-nowrap">
           {/* Left Side */}
           {toggleFilter && (
@@ -88,7 +88,7 @@ const JobSearchCards = () => {
           )}
           {/* Right Side */}
           <div
-            className={`right px-4 lg:px-0 md:w-full ${
+            className={`right lg:px-0 md:w-full ${
               toggleFilter === true ? "lg:w-10/12" : "lg:w-full"
             } flex gap-8`}
           >

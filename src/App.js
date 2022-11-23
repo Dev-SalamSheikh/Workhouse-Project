@@ -17,6 +17,7 @@ import Podcasts from "./Pages/Podcasts";
 import "swiper/css";
 import "swiper/css/navigation";
 import Blogs from "./Pages/Blogs";
+import Settings from "./Pages/Settings";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/localservices" element={<LocalServices />} />
         <Route path="/podcast" element={<Podcasts />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

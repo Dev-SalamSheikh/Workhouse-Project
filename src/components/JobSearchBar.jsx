@@ -4,7 +4,7 @@ const JobSearchBar = ({ jobsearch }) => {
   const [searchData, setSearchData] = useState("");
   return (
     <div className="bg-Banner">
-      <div className="lg:pt-16 pt-8 pb-8 container mx-auto px-4 md:px-0">
+      <div className="lg:pt-16 pt-8 pb-8 container w-10/12 mx-auto">
         <div
           className={`py-7 lg:py-14 rounded-xl ${
             jobsearch ? "bg-searchbarBg" : "bg-freelancerBg"
