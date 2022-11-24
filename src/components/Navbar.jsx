@@ -205,6 +205,10 @@ const Navbar = () => {
       name: "Worker Profile",
       link: "/profile/worker",
     },
+    {
+      name: "Local Service Profile",
+      link: "/profile/localserviceprovider",
+    },
   ];
 
   return (
