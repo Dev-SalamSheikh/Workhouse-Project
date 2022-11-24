@@ -197,6 +197,10 @@ const Navbar = () => {
       name: "Settings",
       link: "/settings",
     },
+    {
+      name: "Freelancer Profile",
+      link: "/profile/freelancer",
+    },
   ];
 
   return (

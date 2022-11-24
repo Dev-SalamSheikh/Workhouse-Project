@@ -18,6 +18,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Blogs from "./Pages/Blogs";
 import Settings from "./Pages/Settings";
+import FreelancerProfile from "./Pages/Profiles/FreelancerProfile";
+import WorkerProfile from "./Pages/Profiles/WorkerProfile";
 
 function App() {
   return (
@@ -37,6 +39,11 @@ function App() {
         <Route path="/podcast" element={<Podcasts />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/settings" element={<Settings />} />
+        {/* Profile Routes */}
+        <Route path="/profile">
+          <Route path="freelancer" element={<FreelancerProfile />} />
+          <Route path="worker" element={<WorkerProfile />} />
+        </Route>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

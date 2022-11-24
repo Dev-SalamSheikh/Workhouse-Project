@@ -25,6 +25,7 @@ module.exports = {
         gigBorder: "#7CD175",
         freelancerOrange: "#D32F2F",
         buttonRed: "#E31212",
+        profileHeaders: "#3F3A3B",
       },
     },
   },
