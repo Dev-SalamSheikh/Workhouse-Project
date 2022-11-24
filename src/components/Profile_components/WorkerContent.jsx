@@ -1,4 +1,4 @@
-import Img from "../../images/freelancer6.jpg";
+import Img from "../../images/freelancer5.jpg";
 import GigCards from "../GigCards";
 import GigImage1 from "../../images/location1.jpg";
 import GigImage2 from "../../images/location2.jpg";
@@ -11,7 +11,7 @@ import PodcastCard from "../PodcastCard";
 import CourseData from "../../TopCourseData";
 import TopCourseCard from "../TopCourseCard";
 
-const FreelancerContent = () => {
+const WorkerContent = () => {
   // Gigs Data
   const gigsData = [
     {
@@ -106,15 +106,8 @@ const FreelancerContent = () => {
             <div className="flex justify-between items-end w-full h-full">
               <div>
                 <h1 className="text-4xl font-bold text-profileHeaders">
-                  Web Developer
+                  Front-end Developer
                 </h1>
-              </div>
-              {/* Rate */}
-              <div className="flex flex-col items-end">
-                <i className="fa-solid fa-pencil"></i>
-                <span className="text-lg font-semibold text-profileHeaders">
-                  $130/Hr
-                </span>
               </div>
             </div>
           </div>
@@ -165,21 +158,14 @@ const FreelancerContent = () => {
               {/* Earnings */}
               <div className="mb-1">
                 <span className="text-lg text-profileHeaders font-bold">
-                  Earnings: $47k+
+                  D.O.B: 11|08|2000
                 </span>
               </div>
 
               {/* Jobs */}
               <div className="mb-1">
                 <span className="text-lg text-profileHeaders font-bold">
-                  Total Jobs: 17
-                </span>
-              </div>
-
-              {/* Total Hours */}
-              <div className="mb-1">
-                <span className="text-lg text-profileHeaders font-bold">
-                  Total Hours: 344
+                  Portfolio Website: 17
                 </span>
               </div>
 
@@ -261,7 +247,7 @@ const FreelancerContent = () => {
               </p>
               <br />
               {/* Part two */}
-              <p className="text-profileHeaders font-medium">
+              <p className=" text-profileHeaders font-medium">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae expedita itaque laborum corporis aut blanditiis? Hic
                 exercitationem, enim, modi ex autem assumenda iusto ullam earum
@@ -290,98 +276,81 @@ const FreelancerContent = () => {
         {/* Skills and Gig */}
         <div className="flex border-b border-b-slate-400">
           {/* Left  */}
-          <div className="w-3/12 border-r-slate-400 border-r px-8 py-4">
-            <h1 className="text-2xl font-semibold">Skills</h1>
+          <div className="w-3/12 border-r-slate-400 border-r">
+            {/* Skills */}
+            <div className="border-b border-b-slate-400 px-8 py-4">
+              <h1 className="text-2xl font-semibold">Skills</h1>
 
-            {/* Skills  */}
-            <div className="mt-4">
-              <p className="font-medium text-profileHeaders">
-                Problem Solving Skills
-              </p>
-              <p className="font-medium text-profileHeaders">Wordpress</p>
-              <p className="font-medium text-profileHeaders">Teamwork</p>
-              <p className="font-medium text-profileHeaders">Creativity</p>
-              <p className="font-medium text-profileHeaders">
-                Organizations Skills
-              </p>
-              <p className="font-medium text-profileHeaders">Web Development</p>
+              {/* Skills  */}
+              <div className="mt-4">
+                <p className="font-medium text-profileHeaders">
+                  Problem Solving Skills
+                </p>
+                <p className="font-medium text-profileHeaders">Wordpress</p>
+                <p className="font-medium text-profileHeaders">Teamwork</p>
+                <p className="font-medium text-profileHeaders">Creativity</p>
+                <p className="font-medium text-profileHeaders">
+                  Organizations Skills
+                </p>
+                <p className="font-medium text-profileHeaders">
+                  Web Development
+                </p>
+              </div>
+            </div>
+
+            {/* Qualifications */}
+            <div className="px-8 py-4">
+              <h1 className="text-2xl font-semibold">Qualifications</h1>
+
+              {/* Skills  */}
+              <div className="mt-4">
+                <p className="font-medium text-profileHeaders">CCNA</p>
+                <p className="font-medium text-profileHeaders">CCNP</p>
+                <p className="font-medium text-profileHeaders">Compita S+</p>
+              </div>
             </div>
           </div>
 
           {/* Right */}
-          <div className="w-9/12 px-8 py-4">
+          <div className="w-9/12 px-8 pt-4 pb-16">
             {/* Heading */}
             <div>
               <h1 className="text-2xl font-semibold flex items-center gap-1">
-                GIGS{" "}
-                <span className="text-base font-normal text-profileHeaders">
-                  (3 Max)
-                </span>
+                Employment History
               </h1>
             </div>
 
-            {/* Gig Cards */}
-            <div className="grid grid-cols-3 gap-12 pl-8 my-8 w-11/12">
-              {gigsData.map((gig) => (
-                <div>
-                  <GigCards
-                    key={gig.id}
-                    image={gig.image}
-                    avatarImg={gig.avatar}
-                    title={gig.title}
-                  />
-                  <div className="text-center mt-4">
-                    <span className="cursor-pointer font-semibold">
-                      Edit | Archive | Delete
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Balance, Active contracts, Time Left */}
-        <div className="flex border-b border-b-slate-400">
-          {/* Left */}
-          <div className="w-3/12 border-r-slate-400 border-r pl-8 pr-2 py-4 flex flex-col justify-between">
-            {/* Balance */}
-            <div className="flex items-center gap-2">
-              <h1 className="text-2xl font-semibold">Balance:</h1>
-              <span className="text-xl text-profileHeaders">$15,000</span>
-            </div>
-
-            {/* WIthdraw */}
-            <div className="text-end">
-              <span className="text-xl font-semibold cursor-pointer text-borderColor">
-                Withdraw
-              </span>
-            </div>
-          </div>
-
-          {/* Right */}
-          <div className="w-9/12 flex">
-            {/* Active Contracts */}
-            <div className="px-8 py-4 flex flex-col gap-2 w-8/12 border-r border-r-slate-400">
-              <h1 className="text-2xl font-semibold">Active Contracts</h1>
-
-              <p className="text-profileHeaders font-medium cursor-pointer">
-                1. Website Development - Mr Ahmed
+            {/* Yelp */}
+            <div className="mt-5">
+              <h2 className="text-xl font-semibold">Yelp - Web Designer</h2>
+              <h4 className="text-lg font-semibold">Feb 2020 - Present</h4>
+              <p className="text-profileHeaders font-medium">
+                1. Lead UI/UX website designer for a fast-pcaed design firm
               </p>
-              <p className="text-profileHeaders font-medium cursor-pointer">
-                2. Website Migration - GhostWritter
+              <p className="text-profileHeaders font-medium">
+                2. Created an average of four minor websites or one major
+                website per month
+              </p>
+              <p className="text-profileHeaders font-medium">
+                3. Created custom graphics sets for clients, with 99% client
+                satisfaction scores
               </p>
             </div>
 
-            {/*Time Left */}
-            <div className="px-8 py-4 flex flex-col gap-2 w-4/12">
-              <h1 className="text-2xl font-semibold">Time Left</h1>
-
-              <p className="text-profileHeaders font-medium cursor-pointer">
-                2 Days 13 Hours
+            {/* Yelp */}
+            <div className="mt-9">
+              <h2 className="text-xl font-semibold">IBM - Web Designer</h2>
+              <h4 className="text-lg font-semibold">Jan 2020 - Feb 2020</h4>
+              <p className="text-profileHeaders font-medium">
+                1. Lead UI/UX website designer for a fast-pcaed design firm
               </p>
-              <p className="text-profileHeaders font-medium cursor-pointer">
-                4 Days 2 Hours
+              <p className="text-profileHeaders font-medium">
+                2. Created an average of four minor websites or one major
+                website per month
+              </p>
+              <p className="text-profileHeaders font-medium">
+                3. Created custom graphics sets for clients, with 99% client
+                satisfaction scores
               </p>
             </div>
           </div>
@@ -436,4 +405,4 @@ const FreelancerContent = () => {
   );
 };
 
-export default FreelancerContent;
+export default WorkerContent;

@@ -1,9 +1,13 @@
-import React from "react";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import WorkerContent from "../../components/Profile_components/WorkerContent";
 
 const WorkerProfile = () => {
   return (
     <div>
-      <h1>Worker Profile</h1>
+      <Navbar />
+      <WorkerContent />
+      <Footer />
     </div>
   );
 };

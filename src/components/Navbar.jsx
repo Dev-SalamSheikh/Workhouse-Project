@@ -201,6 +201,10 @@ const Navbar = () => {
       name: "Freelancer Profile",
       link: "/profile/freelancer",
     },
+    {
+      name: "Worker Profile",
+      link: "/profile/worker",
+    },
   ];
 
   return (
