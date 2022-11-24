@@ -213,6 +213,10 @@ const Navbar = () => {
       name: "Company Profile",
       link: "/profile/company",
     },
+    {
+      name: "Tutor Profile",
+      link: "/profile/tutor",
+    },
   ];
 
   return (

@@ -22,6 +22,7 @@ import FreelancerProfile from "./Pages/Profiles/FreelancerProfile";
 import WorkerProfile from "./Pages/Profiles/WorkerProfile";
 import LSPProfile from "./Pages/Profiles/LSPProfile";
 import CompanyProfile from "./Pages/Profiles/CompanyProfile";
+import TutorProfile from "./Pages/Profiles/TutorProfile";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="worker" element={<WorkerProfile />} />
           <Route path="localserviceprovider" element={<LSPProfile />} />
           <Route path="company" element={<CompanyProfile />} />
+          <Route path="tutor" element={<TutorProfile />} />
         </Route>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
