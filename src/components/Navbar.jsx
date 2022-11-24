@@ -209,6 +209,10 @@ const Navbar = () => {
       name: "Local Service Profile",
       link: "/profile/localserviceprovider",
     },
+    {
+      name: "Company Profile",
+      link: "/profile/company",
+    },
   ];
 
   return (
