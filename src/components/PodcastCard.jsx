@@ -30,7 +30,7 @@ const PodcastCard = ({ Img, author, min, title }) => {
 
           {/* Button */}
           <div>
-            <button className="text-lg font-semibold bg-SearchBtnBg py-[2px] px-4 rounded-lg">
+            <button className="text-base md:text-lg font-semibold bg-SearchBtnBg py-[2px] px-4 rounded-lg">
               Tips
             </button>
           </div>
