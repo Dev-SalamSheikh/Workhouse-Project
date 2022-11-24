@@ -234,7 +234,7 @@ const FreelancerContent = () => {
                 possimus odit, repellendus veniam mollitia adipisci vero! Totam
                 velit at veritatis pariatur. Aliquam culpa sint qui libero
                 quidem a quam obcaecati explicabo in officiis vero magni ducimus
-                dolor, ad accusantium?
+                dolor?
               </p>
             </div>
           </div>
