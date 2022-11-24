@@ -198,6 +198,7 @@ const FreelancerContent = () => {
             </div>
           </div>
         </div>
+        {/* About Finish */}
 
         {/* Balance, Active contracts, Time Left */}
         <div className="flex lg:flex-nowrap flex-wrap border-b border-b-slate-400">
@@ -248,6 +249,7 @@ const FreelancerContent = () => {
             </div>
           </div>
         </div>
+        {/* Balance Finish */}
 
         {/* Post a Job */}
         <div className="px-8 pt-4 pb-8 border-b border-b-slate-400">
@@ -349,6 +351,7 @@ const FreelancerContent = () => {
             </button>
           </div>
         </div>
+        {/* Post a job finished */}
 
         {/* Podcast Container */}
         <div className="px-8 pt-4 pb-16 border-b border-b-slate-400">
@@ -372,6 +375,7 @@ const FreelancerContent = () => {
             ))}
           </div>
         </div>
+        {/* Podcast Container Ended */}
 
         {/* Courses Container */}
         <div className="px-8 pt-4 pb-16">
@@ -394,6 +398,7 @@ const FreelancerContent = () => {
             ))}
           </div>
         </div>
+        {/* Courses Containeer Finished */}
       </div>
     </div>
   );
