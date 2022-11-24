@@ -387,7 +387,7 @@ const WorkerContent = () => {
 
           {/* Courses Cards */}
           <div className="pl-12 mt-8 w-11/12 card_container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-8">
-            {CourseData.slice(0, 4).map((item) => (
+            {CourseData.slice(4, 8).map((item) => (
               <TopCourseCard
                 key={item.id}
                 img={item.image}
