@@ -1,8 +1,4 @@
 import Img from "../../images/freelancer5.jpg";
-import GigCards from "../GigCards";
-import GigImage1 from "../../images/location1.jpg";
-import GigImage2 from "../../images/location2.jpg";
-import GigImage3 from "../../images/location3.jpg";
 import Img1 from "../../images/assets/podcast1.jpg";
 import Img2 from "../../images/assets/podcast2.jpg";
 import Img3 from "../../images/assets/podcast3.png";
@@ -12,28 +8,6 @@ import CourseData from "../../TopCourseData";
 import TopCourseCard from "../TopCourseCard";
 
 const WorkerContent = () => {
-  // Gigs Data
-  const gigsData = [
-    {
-      id: 1,
-      image: GigImage1,
-      title: "Gig No 01",
-      avatar: GigImage1,
-    },
-    {
-      id: 2,
-      image: GigImage2,
-      title: "Gig No 02",
-      avatar: GigImage2,
-    },
-    {
-      id: 3,
-      image: GigImage3,
-      title: "Gig No 03",
-      avatar: GigImage3,
-    },
-  ];
-
   //   Podcast Data
   const podcastData = [
     {
