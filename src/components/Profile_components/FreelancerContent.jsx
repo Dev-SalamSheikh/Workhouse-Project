@@ -309,7 +309,7 @@ const FreelancerContent = () => {
           </div>
 
           {/* Right */}
-          <div className="px-8 py-4">
+          <div className="w-9/12 px-8 py-4">
             {/* Heading */}
             <div>
               <h1 className="text-2xl font-semibold flex items-center gap-1">
@@ -321,7 +321,7 @@ const FreelancerContent = () => {
             </div>
 
             {/* Gig Cards */}
-            <div className="grid grid-cols-3 gap-12 pl-8 my-8">
+            <div className="grid grid-cols-3 gap-12 pl-8 my-8 w-11/12">
               {gigsData.map((gig) => (
                 <div>
                   <GigCards
