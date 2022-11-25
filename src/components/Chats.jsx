@@ -158,7 +158,7 @@ const Chats = () => {
         {/* Left Side => Single Chat */}
         <div className="w-3/12 border-r border-r-slate-400 h-[85vh]">
           {/* SearchBar */}
-          <div className="h-[9vh] flex justify-center items-center  px-8 border-b border-b-slate-400">
+          <div className="h-[80px] flex justify-center items-center  px-8 border-b border-b-slate-400">
             {/* Search Input */}
             <div className="w-11/12 bg-white flex items-center gap-4 rounded-md py-2 px-4 border border-slate-400">
               <i className="fa-solid fa-magnifying-glass text-gray-500"></i>
@@ -188,7 +188,7 @@ const Chats = () => {
         <div className="w-9/12">
           <div className="flex flex-col justify-between h-full">
             {/* Header */}
-            <div className="h-[9vh] px-2 border-b border-b-slate-400">
+            <div className="h-[80px] px-2 border-b border-b-slate-400">
               {/* Chat Holder Name */}
               <div className="flex justify-between items-end h-full">
                 {/* Left */}
