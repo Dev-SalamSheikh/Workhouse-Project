@@ -24,6 +24,7 @@ import LSPProfile from "./Pages/Profiles/LSPProfile";
 import CompanyProfile from "./Pages/Profiles/CompanyProfile";
 import TutorProfile from "./Pages/Profiles/TutorProfile";
 import Messages from "./Pages/Messages";
+import MobileMessage from "./components/MobileMessage";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/messages" element={<Messages />} />
+        <Route path="/message/:id" element={<MobileMessage />} />
         {/* Profile Routes */}
         <Route path="/profile">
           <Route path="freelancer" element={<FreelancerProfile />} />
