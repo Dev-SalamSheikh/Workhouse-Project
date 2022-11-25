@@ -23,6 +23,7 @@ import WorkerProfile from "./Pages/Profiles/WorkerProfile";
 import LSPProfile from "./Pages/Profiles/LSPProfile";
 import CompanyProfile from "./Pages/Profiles/CompanyProfile";
 import TutorProfile from "./Pages/Profiles/TutorProfile";
+import Messages from "./Pages/Messages";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/podcast" element={<Podcasts />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/messages" element={<Messages />} />
         {/* Profile Routes */}
         <Route path="/profile">
           <Route path="freelancer" element={<FreelancerProfile />} />

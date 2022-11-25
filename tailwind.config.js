@@ -16,6 +16,7 @@ module.exports = {
         bgGigBox: "#7CD175",
         searchbarBg: "#A4E0F6",
         freelancerBg: "#F3E8F6",
+        chatBg: "#EFF1F8",
         coursesSearchBar: "#F28029",
         localRed: "#E31212",
       },
