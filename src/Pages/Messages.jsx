@@ -1,15 +1,13 @@
 import Chats from "../components/Chats";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Messages = () => {
   return (
     <div>
-      <div className="h-[11vh]">
-        <Navbar />
-      </div>
-      <div className="h-[89vh]">
-        <Chats />
-      </div>
+      <Navbar />
+      <Chats />
+      <Footer />
     </div>
   );
 };

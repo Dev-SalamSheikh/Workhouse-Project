@@ -153,10 +153,10 @@ const Chats = () => {
   // });
 
   return (
-    <div className="bg-chatBg h-[89vh] overflow-hidden">
+    <div className="bg-chatBg h-[85vh] overflow-hidden">
       <div className="flex justify-between">
         {/* Left Side => Single Chat */}
-        <div className="w-3/12 border-r border-r-slate-400 h-[88vh]">
+        <div className="w-3/12 border-r border-r-slate-400 h-[85vh]">
           {/* SearchBar */}
           <div className="h-[9vh] flex justify-center items-center  px-8 border-b border-b-slate-400">
             {/* Search Input */}
