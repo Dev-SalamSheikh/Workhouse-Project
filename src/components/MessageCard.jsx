@@ -11,7 +11,7 @@ const MessageCard = ({ img, name, text, status }) => {
               alt="avatar"
               className="w-[50px] h-[50px] rounded-full brightness-75 object-cover"
             />
-            <div className="absolute right-[30%] bottom-0">
+            <div className="absolute lg:right-[20%] xl:right-[30%] bottom-0">
               <i className="fa-solid fa-circle text-green-600 text-[12px]"></i>
             </div>
           </div>
