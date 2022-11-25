@@ -186,7 +186,7 @@ const Chats = () => {
         </div>
 
         {/* Right Side => Conversations */}
-        <div className="w-9/12">
+        <div className="w-9/12 overflow-hidden">
           <div className="flex flex-col justify-between h-full">
             {/* Header */}
             <div className="h-[80px] px-2 border-b border-b-slate-400">

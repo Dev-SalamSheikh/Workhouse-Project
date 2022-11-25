@@ -3,7 +3,7 @@ import React from "react";
 const TextMessage = ({ text }) => {
   return (
     <div
-      className="w-max lg:max-w-[500px] px-4 py-4 rounded-lg text-white relative"
+      className="w-max max-w-[80%] md:max-w-[500px] px-4 py-4 rounded-lg text-white relative"
       style={{ backgroundColor: "#2196F3" }}
     >
       <h1 className="text-sm">{text}</h1>
