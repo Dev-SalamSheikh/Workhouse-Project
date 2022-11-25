@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import AccountInfoSetting from "./AccountInfoSetting";
 import BillingSetting from "./BillingSetting";
+import MessagePopup from "./MessagePopup";
 import NotificationSetting from "./NotificationSetting";
 import SecuritySetting from "./SecuritySetting";
 
@@ -17,6 +18,7 @@ const SettingContainer = () => {
     email: "Workhouse@gmail.com",
     password: 12345678909,
     securityAnswer: "BangladeshBogura",
+    profile: "freelancer",
   });
 
   //   Toggle Function
@@ -55,9 +57,24 @@ const SettingContainer = () => {
         <p className="text-center lg:text-end font-medium">
           Need to update your profile? <br className="md:hidden block" />
           <span className="text-borderColor cursor-pointer">
-            <NavLink to="/">Go to your profile page</NavLink>
+            {userData.profile === "freelancer" ? (
+              <NavLink to="/profile/freelancer">
+                Go to your profile page
+              </NavLink>
+            ) : userData.profile === "local" ? (
+              <NavLink to="/profile/localserviceprovider">
+                Go to your profile page
+              </NavLink>
+            ) : userData.profile === "worker" ? (
+              <NavLink to="/profile/worker">Go to your profile page</NavLink>
+            ) : userData.profile === "company" ? (
+              <NavLink to="/profile/company">Go to your profile page</NavLink>
+            ) : (
+              <NavLink to="/profile/tutor">Go to your profile page</NavLink>
+            )}
           </span>
         </p>
+
         {/* Actual Content */}
 
         <div className="content flex justify-between flex-col lg:flex-row lg:mt-2 mt-8">

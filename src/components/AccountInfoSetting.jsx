@@ -85,14 +85,21 @@ const AccountInfoSetting = ({ userData, setUserData }) => {
 
         {/* Dropdown */}
         <div className="mt-6 w-full lg:w-max">
-          <select className="border border-black outline-none font-medium w-full lg:w-max">
-            <option value="Freelancer Account">Freelancer Account</option>
-            <option value="Local Service Provider">
-              Local Service Provider
-            </option>
-            <option value="Company Account">Company Account</option>
-            <option value="Worker Account">Worker Account</option>
-            <option value="Tutor Account">Tutor Account</option>
+          <select
+            className="border border-black outline-none font-medium w-full lg:w-max"
+            value={userData.profile}
+            onChange={(e) =>
+              setUserData({
+                ...userData,
+                profile: e.target.value,
+              })
+            }
+          >
+            <option value="freelancer">Freelancer Account</option>
+            <option value="local">Local Service Provider</option>
+            <option value="company">Company Account</option>
+            <option value="worker">Worker Account</option>
+            <option value="tutor">Tutor Account</option>
           </select>
         </div>
       </div>

@@ -147,9 +147,9 @@ const Chats = () => {
   ];
 
   return (
-    <div className="bg-chatBg md:h-[85vh] overflow-hidden">
+    <div className="bg-chatBg lg:h-[85vh] overflow-hidden">
       {/* Desktop Version */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="flex justify-between">
           {/* Left Side => Single Chat */}
           <div className="w-3/12 border-r border-r-slate-400 h-[85vh]">
@@ -240,7 +240,7 @@ const Chats = () => {
       </div>
 
       {/* Mobile Version */}
-      <div>
+      <div className="block lg:hidden">
         {chatData.map((item) => (
           <NavLink
             key={item.id}
