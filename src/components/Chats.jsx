@@ -207,6 +207,7 @@ const Chats = () => {
               </div>
             </div>
             {/* Messages */}
+
             <div className="pb-4">
               {/* Middle Part => Chat text */}
               <div className="mb-6 px-4 w-[93%] flex flex-col justify-end items-end gap-4">
@@ -215,8 +216,8 @@ const Chats = () => {
               </div>
 
               {/* Last Part => Send Message */}
-              <div className="px-4 h-full">
-                <div className="bg-white p-4 rounded-md w-[93%] flex items-center justify-between gap-6">
+              <div className="px-4 flex justify-between items-center w-full">
+                <div className="bg-white p-4 rounded-md w-[93%] flex items-center justify-between gap-6 shadow-sm">
                   {/* Attachment */}
                   <div>
                     <i className="fa-solid fa-paperclip text-xl cursor-pointer text-gray-400"></i>
@@ -229,6 +230,10 @@ const Chats = () => {
                       className="w-full resize-none border-none outline-none h-[25px]"
                     ></textarea>
                   </div>
+                </div>
+                {/* Arrow */}
+                <div className="w-[5%]">
+                  <i className="fa-solid fa-paper-plane text-xl text-[#2196F3] bg-white shadow-md py-2 px-3 flex justify-center items-center w-max rounded-full cursor-pointer"></i>
                 </div>
               </div>
             </div>
