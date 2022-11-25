@@ -5,6 +5,7 @@ import img4 from "../images/freelancer4.jpg";
 import img5 from "../images/freelancer5.jpg";
 import img6 from "../images/freelancer6.jpg";
 import MessageCard from "./MessageCard";
+import TextMessage from "./TextMessage";
 
 const Chats = () => {
   // Chat Data
@@ -208,8 +209,9 @@ const Chats = () => {
             {/* Messages */}
             <div className="pb-4">
               {/* Middle Part => Chat text */}
-              <div className="">
-                <h1>Hello</h1>
+              <div className="mb-6 px-4 w-[93%] flex flex-col justify-end items-end gap-4">
+                <TextMessage text="Hi, How are you?" />
+                <TextMessage text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, non repudiandae cum, cumque officiis consectetur similique earum animi voluptate, exercitationem ullam. Mollitia voluptate illo corrupti fugiat quos quam. Cum consectetur dicta saepe at voluptatem dolorem minima eveniet sit? Ipsum tempore totam harum dolorem sed alias quam sequi delectus! Vero voluptatum dolor dolore ea doloribus optio libero earum adipisci aliquam nulla beatae facilis, laboriosam possimus asperiores quibusdam dolorum et eaque fuga illum voluptatibus? Quas minima nulla suscipit vero id minus molestiae ullam aspernatur excepturi! Facilis explicabo nemo commodi obcaecati architecto voluptas voluptate sint necessitatibus dolores autem, at reprehenderit, rerum dicta. Nulla?" />
               </div>
 
               {/* Last Part => Send Message */}
@@ -224,7 +226,7 @@ const Chats = () => {
                   <div className="w-full h-full">
                     <textarea
                       placeholder="Write message"
-                      className="w-full resize-none border-none outline-none h-[28px] pt-1"
+                      className="w-full resize-none border-none outline-none h-[25px]"
                     ></textarea>
                   </div>
                 </div>
