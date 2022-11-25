@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import AccountInfoSetting from "./AccountInfoSetting";
 import BillingSetting from "./BillingSetting";
-import MessagePopup from "./MessagePopup";
 import NotificationSetting from "./NotificationSetting";
 import SecuritySetting from "./SecuritySetting";
 
