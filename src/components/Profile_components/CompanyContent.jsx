@@ -5,8 +5,29 @@ import Img4 from "../../images/assets/podcast4.png";
 import PodcastCard from "../PodcastCard";
 import CourseData from "../../TopCourseData";
 import TopCourseCard from "../TopCourseCard";
+import { useState } from "react";
 
 const FreelancerContent = () => {
+  // STates
+  const [gigData, setGigData] = useState({
+    title: "",
+    desc: "",
+    convention: true,
+    freelancer: false,
+  });
+  const [podcastCreated, setPodcastCreated] = useState(false);
+  const [podcastSaved, setPodcastSaved] = useState(true);
+
+  // Change FUnctions
+  const createdPodcast = () => {
+    setPodcastCreated(true);
+    setPodcastSaved(false);
+  };
+  const savedPodcast = () => {
+    setPodcastSaved(true);
+    setPodcastCreated(false);
+  };
+
   //   Podcast Data
   const podcastData = [
     {
@@ -265,6 +286,13 @@ const FreelancerContent = () => {
                   Title
                 </p>
                 <input
+                  value={gigData.title}
+                  onChange={(e) =>
+                    setGigData({
+                      ...gigData,
+                      title: e.target.value,
+                    })
+                  }
                   type="text"
                   className="border border-black py-1 lg:py-2 px-4 bg-transparent w-full outline-none rounded-md"
                 />
@@ -276,6 +304,13 @@ const FreelancerContent = () => {
                   Description
                 </p>
                 <textarea
+                  value={gigData.desc}
+                  onChange={(e) =>
+                    setGigData({
+                      ...gigData,
+                      desc: e.target.value,
+                    })
+                  }
                   rows="12"
                   className="w-full bg-transparent border border-black outline-none py-1 lg:py-2 px-4 resize-none rounded-md"
                 ></textarea>
@@ -316,7 +351,14 @@ const FreelancerContent = () => {
                   type="checkbox"
                   id="convo"
                   className="scale-100 lg:scale-125"
-                  checked
+                  checked={gigData.convention}
+                  value={gigData.convention}
+                  onChange={(e) =>
+                    setGigData({
+                      ...gigData,
+                      convention: e.target.checked,
+                    })
+                  }
                 />
               </div>
 
@@ -332,6 +374,14 @@ const FreelancerContent = () => {
                   type="checkbox"
                   id="freelance"
                   className="scale-100 lg:scale-125"
+                  checked={gigData.freelancer}
+                  value={gigData.freelancer}
+                  onChange={(e) =>
+                    setGigData({
+                      ...gigData,
+                      freelancer: e.target.checked,
+                    })
+                  }
                 />
               </div>
 
@@ -357,9 +407,25 @@ const FreelancerContent = () => {
         <div className="px-8 pt-4 pb-16 border-b border-b-slate-400">
           <div>
             <h1 className="text-xl lg:text-2xl font-semibold">Podcasts</h1>
-            <p className="font-semibold lg:text-base text-sm">
-              Created | <span className="text-borderColor">Saved</span>
-            </p>
+            <div>
+              <span
+                className={`${
+                  podcastCreated && "text-borderColor"
+                } font-semibold lg:text-base text-sm cursor-pointer`}
+                onClick={createdPodcast}
+              >
+                Created
+              </span>
+              <span> | </span>
+              <span
+                className={`${
+                  podcastSaved && "text-borderColor"
+                } font-semibold lg:text-base text-sm cursor-pointer`}
+                onClick={savedPodcast}
+              >
+                Saved
+              </span>
+            </div>
           </div>
 
           {/* Podcast Cards */}

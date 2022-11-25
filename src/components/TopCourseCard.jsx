@@ -5,8 +5,8 @@ const TopCourseCard = ({
   title,
   authorFristName,
   authorLastName,
-  rating,
   price,
+  showPrice,
 }) => {
   return (
     <div className="w-full bg-white cursor-pointer rounded-md overflow-hidden shadow-md">
@@ -23,7 +23,9 @@ const TopCourseCard = ({
           <i className="fa-solid fa-star" style={{ color: "#41A9F4" }}></i>
           <i className="fa-solid fa-star" style={{ color: "#41A9F4" }}></i>
         </div>
-        <p className="text-borderColor font-semibold text-lg">{price}</p>
+        {showPrice && (
+          <p className="text-borderColor font-semibold text-lg">{price}</p>
+        )}
       </div>
     </div>
   );

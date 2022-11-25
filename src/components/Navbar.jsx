@@ -62,13 +62,16 @@ const Navbar = () => {
   // Dropdown Menu Data
   const jobDropdown = [
     {
-      name: "Job Button 1",
+      name: "Job Search",
+      link: "/jobs",
     },
     {
-      name: "Job Button 2",
+      name: "Career Advice",
+      link: "/career",
     },
     {
-      name: "Job Button 3",
+      name: "Average Salary",
+      link: "/salary",
     },
     {
       name: "Job Button 4",
@@ -78,10 +81,12 @@ const Navbar = () => {
   // Dropdown Menu Data
   const FreelancingDropdown = [
     {
-      name: "Freelancing 1",
+      name: "Become a Freelancer",
+      link: "/freelancer",
     },
     {
-      name: "Freelancing 2",
+      name: "Freelancer Profile",
+      link: "/profile/freelancer",
     },
     {
       name: "Freelancing 3",
@@ -94,7 +99,8 @@ const Navbar = () => {
   // Dropdown Menu Data
   const GigDropdown = [
     {
-      name: "Gig Button 1",
+      name: "Create Gig",
+      link: "/postgig",
     },
     {
       name: "Gig Button 2",
@@ -110,10 +116,12 @@ const Navbar = () => {
   // Dropdown Menu Data
   const EduDropdown = [
     {
-      name: "Education 1",
+      name: "All Courses",
+      link: "/allcourse",
     },
     {
-      name: "Education 2",
+      name: "Career Advice",
+      link: "/career",
     },
     {
       name: "Education 3",
@@ -126,10 +134,12 @@ const Navbar = () => {
   // Dropdown Menu Data
   const LoocalDropdown = [
     {
-      name: "Local Button 1",
+      name: "Local Services",
+      link: "/localservices",
     },
     {
-      name: "Local Button 2",
+      name: "Local Service Profile",
+      link: "/profile/localserviceprovider",
     },
     {
       name: "Local Button 3",
@@ -142,76 +152,40 @@ const Navbar = () => {
   // Dropdown Profile
   const ProfilelDropdown = [
     {
-      name: "Create Gig",
-      link: "/postgig",
-    },
-    {
-      name: "Career Advice",
-      link: "/career",
-    },
-    {
-      name: "Forum",
-      link: "/forum",
-    },
-    {
-      name: "Average Salary",
-      link: "/salary",
-    },
-    {
-      name: "Event",
-      link: "/event",
-    },
-    {
       name: "Build CV",
       link: "/buildcv",
-    },
-    {
-      name: "Create an account",
-      link: "/register",
-    },
-    {
-      name: "Job Search Page",
-      link: "/jobs",
-    },
-    {
-      name: "Become a freelancer",
-      link: "/freelancer",
-    },
-    {
-      name: "Courses",
-      link: "/allcourse",
-    },
-    {
-      name: "Local Services",
-      link: "/localservices",
-    },
-    {
-      name: "Podcast",
-      link: "/podcast",
     },
     {
       name: "Blogs",
       link: "/blogs",
     },
     {
+      name: "Podcast",
+      link: "/podcast",
+    },
+    {
+      name: "Event",
+      link: "/event",
+    },
+    {
       name: "Settings",
       link: "/settings",
+    },
+    {
+      name: "Forum",
+      link: "/forum",
+    },
+    {
+      name: "Create an account",
+      link: "/register",
     },
     {
       name: "Messages",
       link: "/messages",
     },
     {
-      name: "Freelancer Profile",
-      link: "/profile/freelancer",
-    },
-    {
       name: "Worker Profile",
       link: "/profile/worker",
-    },
-    {
-      name: "Local Service Profile",
-      link: "/profile/localserviceprovider",
     },
     {
       name: "Company Profile",
@@ -267,7 +241,7 @@ const Navbar = () => {
                     </span>
                     {/* Show Job State Toggle */}
                     {showJob && (
-                      <div className="absolute bg-white w-28 rounded-md  overflow-hidden shadow-md">
+                      <div className="absolute bg-white w-32 rounded-md  overflow-hidden shadow-md">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg text-white font-semibold">
                             Jobs
@@ -275,16 +249,17 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white text-center">
                           {jobDropdown.map((item, i) => (
-                            <div className="border-t p-2 cursor-pointer">
-                              <span key={i} className="">
-                                {item.name}
-                              </span>
-                            </div>
+                            <NavLink to={item.link} key={i}>
+                              <div className="border-t p-2 cursor-pointer">
+                                <span className="">{item.name}</span>
+                              </div>
+                            </NavLink>
                           ))}
                         </div>
                       </div>
                     )}
                   </div>
+
                   <div className="relative">
                     <span
                       className="text-xl font-bold cursor-pointer"
@@ -296,7 +271,7 @@ const Navbar = () => {
 
                     {/* Show Freelancing State Toggle */}
                     {showFreelancing && (
-                      <div className="absolute bg-white w-28 rounded-md  overflow-hidden shadow-md">
+                      <div className="absolute bg-white w-32 rounded-md  overflow-hidden shadow-md">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg font-semibold text-white">
                             Freelancing
@@ -304,12 +279,11 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white text-center">
                           {FreelancingDropdown.map((item, i) => (
-                            <div
-                              className="border-t p-2 cursor-pointer"
-                              key={i}
-                            >
-                              <span className="">{item.name}</span>
-                            </div>
+                            <NavLink to={item.link} key={i}>
+                              <div className="border-t p-2 cursor-pointer">
+                                <span className="">{item.name}</span>
+                              </div>
+                            </NavLink>
                           ))}
                         </div>
                       </div>
@@ -326,7 +300,7 @@ const Navbar = () => {
 
                     {/* Show Gig State Toggle */}
                     {showGig && (
-                      <div className="absolute bg-white w-28 rounded-md  overflow-hidden shadow-md">
+                      <div className="absolute bg-white w-32 rounded-md  overflow-hidden shadow-md">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg font-semibold text-white">
                             Gig
@@ -334,12 +308,11 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white text-center">
                           {GigDropdown.map((item, i) => (
-                            <div
-                              className="border-t p-2 cursor-pointer"
-                              key={i}
-                            >
-                              <span className="">{item.name}</span>
-                            </div>
+                            <NavLink to={item.link} key={i}>
+                              <div className="border-t p-2 cursor-pointer">
+                                <span className="">{item.name}</span>
+                              </div>
+                            </NavLink>
                           ))}
                         </div>
                       </div>
@@ -356,7 +329,7 @@ const Navbar = () => {
 
                     {/* Show Gig State Toggle */}
                     {showEducation && (
-                      <div className="absolute bg-white w-28 rounded-md  overflow-hidden">
+                      <div className="absolute bg-white w-32 rounded-md  overflow-hidden">
                         <div className="bg-borderColor p-2 text-center">
                           <h1 className="text-lg font-semibold text-white">
                             Education
@@ -364,12 +337,11 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white text-center">
                           {EduDropdown.map((item, i) => (
-                            <div
-                              className="border-t p-2 cursor-pointer"
-                              key={i}
-                            >
-                              <span className="">{item.name}</span>
-                            </div>
+                            <NavLink to={item.link} key={i}>
+                              <div className="border-t p-2 cursor-pointer">
+                                <span className="">{item.name}</span>
+                              </div>
+                            </NavLink>
                           ))}
                         </div>
                       </div>
@@ -394,12 +366,11 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white text-center">
                           {LoocalDropdown.map((item, i) => (
-                            <div
-                              className="border-t p-2 cursor-pointer"
-                              key={i}
-                            >
-                              <span className="">{item.name}</span>
-                            </div>
+                            <NavLink to={item.link} key={i}>
+                              <div className="border-t p-2 cursor-pointer">
+                                <span className="">{item.name}</span>
+                              </div>
+                            </NavLink>
                           ))}
                         </div>
                       </div>
@@ -426,7 +397,11 @@ const Navbar = () => {
             {showProfile && (
               <div className="absolute top-[110%] bg-white w-max shadow-md rounded-md overflow-hidden z-[10000]">
                 <div className="bg-borderColor p-2 text-center">
-                  <h1 className="text-lg font-semibold text-white">Profile</h1>
+                  <NavLink to="/profile/freelancer">
+                    <h1 className="text-lg font-semibold text-white cursor-pointer">
+                      Profile
+                    </h1>
+                  </NavLink>
                 </div>
                 <div className="bg-white text-center">
                   {ProfilelDropdown.map((item, i) => (

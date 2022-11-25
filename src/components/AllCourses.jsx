@@ -8,6 +8,7 @@ const AllCourses = () => {
         <div className="card_container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-8">
           {CourseData.map((item) => (
             <TopCourseCard
+              showPrice
               key={item.id}
               img={item.image}
               title={item.title}

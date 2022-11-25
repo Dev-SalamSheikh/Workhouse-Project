@@ -30,7 +30,7 @@ const CourseSearch = () => {
                 })
               }
               type="text"
-              placeholder="Search Freelancer Contacts"
+              placeholder="Search Courses..."
               className="bg-transparent border-none outline-none w-full"
             />
             <i className="fa-solid fa-circle-xmark text-gray-500 cursor-pointer"></i>

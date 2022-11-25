@@ -55,8 +55,8 @@ const EventCalendar = () => {
             </h2>
           </div>
           {/* SearchBox */}
-          <div className="w-full">
-            <div className="bg-white flex gap-4 md:gap-8 items-center p-2 md:p-4 rounded-lg w-full md:w-8/12 lg:mx-auto border-slate-400 border">
+          <div className="w-full md:w-[50%]">
+            <div className="bg-white flex gap-4 md:gap-8 items-center p-2 md:p-4 rounded-lg w-full md:w-8/12 border-slate-400 border">
               <i className="fa-solid fa-magnifying-glass"></i>
               <input
                 type="text"

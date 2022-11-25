@@ -16,7 +16,7 @@ const JobSearchBar = ({ jobsearch }) => {
               value={searchData}
               onChange={(e) => setSearchData(e.target.value)}
               type="text"
-              placeholder="Search Freelancer Contacts"
+              placeholder="Search Jobs..."
               className="bg-transparent border-none outline-none w-full"
             />
             {searchData.length >= 1 && (

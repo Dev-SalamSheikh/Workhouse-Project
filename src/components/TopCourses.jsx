@@ -54,6 +54,7 @@ const TopCourses = () => {
               {CourseData.map((item) => (
                 <SwiperSlide key={item.id}>
                   <TopCourseCard
+                    showPrice
                     img={item.image}
                     title={item.title}
                     authorFristName={item.authorFristName}
